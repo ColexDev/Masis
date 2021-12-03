@@ -1,5 +1,5 @@
 #include <iostream>
-#include "cpr.h"
+#include "cpr/cpr.h"
 #include <ncurses.h>
 #include <curses.h>
 #include "json.hpp"
@@ -17,7 +17,6 @@ string roundJson(json a)
     double c = ceil(b * 100.0) / 100.0;
     string d = to_string(c);
     return d.substr(0, d.size()-4);
-    
 }
 
 int main()
